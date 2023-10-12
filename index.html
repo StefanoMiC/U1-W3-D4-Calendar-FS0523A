@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>EpiCalendar</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Empty</h1>
+    <div id="calendar">
+      <!-- le celle del calendario si genereranno dinamicamente a partire da una funzione createDays() -->
+
+      <!-- <div class="day">
+        <h3>1</h3>
+      </div> -->
+
+    </div>
+
+    <h2>Add Meeting</h2>
+    <div id="addMeeting">
+      <div>
+        <h4>Meeting Day</h4>
+        <span id="newMeetingDay">Click on a Day</span>
+      </div>
+      <form>
+        <div>
+          <h4>Meeting Time</h4>
+          <input type="time" id="newMeetingTime" required />
+        </div>
+        <div>
+          <h4>Meeting Name</h4>
+          <input type="text" id="newMeetingName" placeholder="Insert a name for the meeting" required />
+        </div>
+        <div>
+          <h4>Add</h4>
+          <button type="submit">Save Meeting</button>
+        </div>
+      </form>
+    </div>
+    <!-- questa sezione è normalmente nascosta, fino a che non la si rende visibile tramite JS -->
+    <div id="appointments">
+      <h2>Appointments For the Day:</h2>
+      <ul id="appointmentsList">
+        <!-- nel caso vi siano appuntamenti da mostrare, verranno generati via JS dei <li> e posizionati qui -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
